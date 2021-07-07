@@ -1,7 +1,6 @@
 import styles from "./styles.module.scss"
-import React, { useEffect } from 'react';
 
-const Title = ({ title, titleSpeed }) => {
+const Title = ({ title }) => {
 
   return (
     <div className={styles['title-container']}>

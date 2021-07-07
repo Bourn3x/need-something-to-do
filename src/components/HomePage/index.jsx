@@ -5,7 +5,7 @@ const HomePage = () => {
 
   return(
     <div className={`${styles['main-container']}`}>
-      <Title title={"Need something to do?"} speed={1}/>
+      <Title title={"Need something to do?"}/>
     </div>
   )
 }
