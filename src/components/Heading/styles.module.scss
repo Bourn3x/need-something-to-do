@@ -1,0 +1,51 @@
+@import "../../global.scss";
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+.heading {
+  font-size: 1.5rem;
+  position: relative;
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  // Revealer
+  &::before {
+    background: $background-color;
+    animation: typewriter 3s steps(44) 1s forwards;
+  }
+
+  // Caret
+  &::after {
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80%;
+    width: .05em;
+    animation: 
+      typewriter 3s steps(44) 1s forwards,
+      blinking 0.5s step-end 12;
+  }
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blinking {
+  from { background: transparent } 
+  to { background: transparent }
+  50% { background: black; }
+}
