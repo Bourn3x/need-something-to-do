@@ -4,6 +4,7 @@ import Title from "../Title"
 const HomePage = () => { 
   return(
     <div className={`${styles['main-container']}`}>
+      <Title/>
     </div>
   )
 }
