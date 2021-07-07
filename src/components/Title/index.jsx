@@ -1,10 +1,15 @@
 import styles from "./styles.module.scss"
-import React from 'react';
+import React, { useEffect } from 'react';
 
-const Title = () => 
-  <p className={styles['title']}>
-    Need something to do?
-  </p>
+const Title = ({ title, titleSpeed }) => {
 
+  return (
+    <div className={styles['title-container']}>
+      <code className={styles['title']}>
+        {title}
+      </code>
+    </div>
+  )
+}
 
 export default Title
