@@ -2,4 +2,22 @@
   display: flex;
   justify-content: center;
   margin-top: 18rem;
+  fill-opacity: 0;
+  animation: color-svg 1.5s ease-in 1s 1 forwards;
+
+  & svg {
+    animation: remove-stroke 1s ease-in 3s 1 forwards;
+  }
+}
+
+@keyframes color-svg {
+  to {
+    fill-opacity: 1;
+  }
+}
+
+@keyframes remove-stroke {
+  to {
+    stroke-width: 0;
+  }
 }
