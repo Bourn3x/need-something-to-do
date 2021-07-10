@@ -23,7 +23,7 @@
   // Revealer
   &::before {
     background: $background-color;
-    animation: typewriter 3s steps(44) 5500ms forwards;
+    animation: typewriter $SUBHEADING_REVEAL_DURATION steps(44) $SUBHEADING_REVEAL_DELAY forwards;
   }
 
   // Caret
@@ -33,8 +33,8 @@
     height: 80%;
     width: .05em;
     animation: 
-      typewriter 3s steps(44) 5500ms forwards,
-      blinking 0.5s step-end 6s 12;
+      typewriter $SUBHEADING_REVEAL_DURATION steps(44) $SUBHEADING_REVEAL_DELAY forwards,
+      blinking $CARET_BLINK_CYCLE step-end $SUBHEADING_REVEAL_DELAY $CARET_NUM_OF_CYCLES;
   }
 }
 
