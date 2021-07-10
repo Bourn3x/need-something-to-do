@@ -1,12 +1,12 @@
-import  { ReactComponent as ReactLogo } from "./laptop.svg"
-import "./Laptop.scss"
+import  { ReactComponent as ReactLogo } from "./drawing.svg"
+import "./Drawing.scss"
 import { useEffect } from "react"
 import Vivus from "vivus"
 import { SVG_DRAW_DELAY, SVG_DRAW_DURATION } from "../../abstracts/constants"
 
-const Laptop = () => {
+const Drawing = () => {
   useEffect(() => {
-    const svg = new Vivus('laptop', { 
+    const svg = new Vivus('drawing', { 
       duration: SVG_DRAW_DURATION,
     }).stop()
 
@@ -17,10 +17,10 @@ const Laptop = () => {
   })
 
   return (
-    <div className={"laptop-container"}>
+    <div className={"drawing-container"}>
       <ReactLogo />
     </div>
   );
 }
 
-export default Laptop
+export default Drawing

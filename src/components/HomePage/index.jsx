@@ -1,7 +1,7 @@
 import "./HomePage.scss"
 import Title from "../Title"
 import Heading from "../Heading"
-import Laptop from "../Laptop"
+import Drawing from "../Drawing"
 
 const HomePage = () => { 
 
@@ -9,7 +9,7 @@ const HomePage = () => {
     <div className={'main-container'}>
       <Title title={"Need something to do?"}/>
       <Heading title={"Perfect! Here's a random activity generator!"}/>
-      <Laptop/>
+      <Drawing/>
     </div>
   )
 }

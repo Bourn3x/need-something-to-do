@@ -1,9 +1,10 @@
 @use "../../abstracts/" as *;
 
-.laptop-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 18rem;
+.drawing-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-40%);
+  margin-top: 6rem;
   fill-opacity: 0;
   animation: color-svg 1.5s ease-in $SVG_COLOR_DELAY 1 forwards;
 
