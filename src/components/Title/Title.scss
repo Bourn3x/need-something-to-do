@@ -1,13 +1,13 @@
-@import "../../global.scss";
+@use "../../abstracts" as *;
 
-.heading-container {
+.title-container {
   display: flex;
   justify-content: center;
   padding-top: 1em;
 }
 
-.heading {
-  font-size: 1.5rem;
+.title {
+  font-size: 4rem;
   position: relative;
 
   &::after,
@@ -23,7 +23,7 @@
   // Revealer
   &::before {
     background: $background-color;
-    animation: typewriter 3s steps(44) 5500ms forwards;
+    animation: typewriter $TITLE_REVEAL_DURATION steps(21) $TITLE_REVEAL_DELAY forwards;
   }
 
   // Caret
@@ -33,8 +33,8 @@
     height: 80%;
     width: .05em;
     animation: 
-      typewriter 3s steps(44) 5500ms forwards,
-      blinking 0.5s step-end 6s 12;
+      typewriter $TITLE_REVEAL_DURATION steps(21) $TITLE_REVEAL_DELAY forwards,
+      blinking $CARET_BLINK_CYCLE step-end $CARET_NUM_OF_CYCLES;
   }
 }
 

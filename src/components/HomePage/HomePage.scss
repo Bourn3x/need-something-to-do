@@ -1,4 +1,4 @@
-@import "../../global.scss";
+@use "../../abstracts" as *;
 
 .main-container {
   background: $background-color;

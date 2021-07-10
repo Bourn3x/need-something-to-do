@@ -1,10 +1,10 @@
-import styles from "./styles.module.scss"
+import "./Title.scss"
 
 const Title = ({ title }) => {
 
   return (
-    <div className={styles['title-container']}>
-      <code className={styles['title']}>
+    <div className={'title-container'}>
+      <code className={'title'}>
         {title}
       </code>
     </div>

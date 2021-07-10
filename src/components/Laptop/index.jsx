@@ -1,5 +1,5 @@
 import  { ReactComponent as ReactLogo } from "./laptop.svg"
-import styles from "./styles.module.scss"
+import "./Laptop.scss"
 import { useEffect } from "react"
 import Vivus from "vivus"
 
@@ -9,7 +9,7 @@ const Laptop = () => {
   })
 
   return (
-    <div className={styles["laptop-container"]}>
+    <div className={"laptop-container"}>
       <ReactLogo />
     </div>
   );
