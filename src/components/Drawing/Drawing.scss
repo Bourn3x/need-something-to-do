@@ -2,9 +2,8 @@
 
 .drawing-container {
   position: absolute;
-  left: 50%;
-  transform: translateX(-40%);
-  margin-top: 6rem;
+  left: 12.2%;
+  
   fill-opacity: 0;
   animation: color-svg 1.5s ease-in $SVG_COLOR_DELAY 1 forwards;
 
@@ -12,6 +11,72 @@
     animation: remove-stroke 1s ease-in $REMOVE_OUTLINE_DELAY 1 forwards;
   }
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 575px) {
+  .drawing-container {
+    left: 50%;
+    transform: translateX(-49.1%);
+    margin-top: 1rem;
+  }
+
+  svg {
+    width: 90vw;
+    height: 100%;
+  }
+
+  .svg-desktop {
+    display: none;
+  }
+
+  .svg-mobile {
+    display: block;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 576px) { 
+  .drawing-container {
+    left: 50%;
+    transform: translateX(-49.1%);
+    margin-top: 1rem;
+  }
+
+  svg {
+    width: 90vw;
+    height: 100%;
+  }
+
+  .svg-desktop {
+    display: none;
+  }
+
+  .svg-mobile {
+    display: block;
+  }
+}
+
+/* Extra large devices (large desktops, 1024px and up) */
+@media (min-width: 1025px) { 
+  .drawing-container {
+    left: 50%;
+    transform: translateX(-49.1%);
+    margin-top: 1rem;
+  }
+
+  svg {
+    width: 85vw;
+    height: 100%;
+  }
+
+  .svg-desktop {
+    display: block;
+  }
+
+  .svg-mobile {
+    display: none;
+  }
+}    
 
 @keyframes color-svg {
   to {
