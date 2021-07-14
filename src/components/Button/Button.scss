@@ -4,6 +4,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 
   @media screen and (max-width: 575px) {
     margin-top: 10rem;
@@ -40,6 +41,18 @@ button {
     cursor: pointer;
   }
 
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: -1px;
+    background: $background-color;
+    animation: reveal-button $BUTTON_REVEAL_DURATION ease-in-out $BUTTON_REVEAL_DELAY forwards;
+  }
+
   @media screen and (max-width: 575px) {
     font-size: 2.4rem;
   }
@@ -50,5 +63,12 @@ button {
 
   @media screen and (min-width: 1025px) {
     font-size: 1.8rem;
+  }
+}
+
+@keyframes reveal-button {
+  to {
+    left: 100%;
+    margin: 0;
   }
 }
