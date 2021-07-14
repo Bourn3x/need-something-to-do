@@ -1,5 +1,6 @@
-import  { ReactComponent as DrawingDesktop } from "./drawing.svg"
-import { ReactComponent as DrawingMobile } from "./drawing_2.svg"
+import  { ReactComponent as DrawingLarge } from "./drawing_large.svg"
+import { ReactComponent as DrawingMedium } from "./drawing_medium.svg"
+import { ReactComponent as DrawingSmall } from "./drawing_small.svg"
 import "./Drawing.scss"
 import { useEffect } from "react"
 import Vivus from "vivus"
@@ -25,13 +26,23 @@ const Drawing = ({ activity }) => {
       svg2.play()
     }, 
     SVG_DRAW_DELAY);
+
+    const svg3 = new Vivus('drawing3', { 
+      duration: SVG_DRAW_DURATION,
+    }).stop()
+
+    setTimeout(() => {
+      svg3.play()
+    }, 
+    SVG_DRAW_DELAY);
   })
 
   return (
     <div className={"drawing-container"}>
       <Activity activity={activity}/>
-      <DrawingDesktop className={'svg-desktop'}/>
-      <DrawingMobile className={'svg-mobile'}/>
+      <DrawingLarge className={'svg-large'}/>
+      <DrawingMedium className={'svg-medium'}/>
+      <DrawingSmall className={'svg-small'}/>
     </div>
   );
 }

@@ -10,19 +10,19 @@
 @media (max-width: 575px) {
   .activity-container {
     left: 50%;
-    top: 51%;
+    top: 36%;
     transform: translateX(-50%);
-    width: 40%;
+    width: 80%;
   }
 
   p {
     font-size: 1.5rem;
-    line-height: 4vw;
+    line-height: 5vw;
   }
 }
 
 /* Medium devices (tablets, 576px and up) */
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
   .activity-container {
     left: 50%;
     top: 51%;

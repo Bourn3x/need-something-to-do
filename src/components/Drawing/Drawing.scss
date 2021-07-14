@@ -25,11 +25,11 @@
     height: 100%;
   }
 
-  .svg-desktop {
+  .svg-medium, .svg-large {
     display: none;
   }
 
-  .svg-mobile {
+  .svg-small {
     display: block;
   }
 }
@@ -47,11 +47,11 @@
     height: 100%;
   }
 
-  .svg-desktop {
+  .svg-small, .svg-large {
     display: none;
   }
 
-  .svg-mobile {
+  .svg-medium {
     display: block;
   }
 }
@@ -69,12 +69,12 @@
     height: 100%;
   }
 
-  .svg-desktop {
-    display: block;
+  .svg-small, .svg-medium {
+    display: none;
   }
 
-  .svg-mobile {
-    display: none;
+  .svg-large {
+    display: block;
   }
 }    
 
