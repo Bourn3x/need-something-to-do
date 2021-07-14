@@ -4,8 +4,9 @@ import "./Drawing.scss"
 import { useEffect } from "react"
 import Vivus from "vivus"
 import { SVG_DRAW_DELAY, SVG_DRAW_DURATION } from "../../abstracts/constants"
+import Activity from "../Activity";
 
-const Drawing = () => {
+const Drawing = ({ activity }) => {
   useEffect(() => {
     const svg = new Vivus('drawing', { 
       duration: SVG_DRAW_DURATION,
@@ -28,6 +29,7 @@ const Drawing = () => {
 
   return (
     <div className={"drawing-container"}>
+      <Activity activity={activity}/>
       <DrawingDesktop className={'svg-desktop'}/>
       <DrawingMobile className={'svg-mobile'}/>
     </div>

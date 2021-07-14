@@ -1,0 +1,67 @@
+.activity-container {
+  position: absolute;
+  left: 53%;
+  top: 55%;
+  transform: translateX(-50%);
+  width: 30%;
+}
+
+/* Small devices (575px and below) */
+@media (max-width: 575px) {
+  .activity-container {
+    left: 50%;
+    top: 51%;
+    transform: translateX(-50%);
+    width: 40%;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 4vw;
+  }
+}
+
+/* Medium devices (tablets, 576px and up) */
+@media (min-width: 576px) { 
+  .activity-container {
+    left: 50%;
+    top: 51%;
+    transform: translateX(-50%);
+    width: 40%;
+  }
+
+  p {
+    font-size: 1.4rem;
+    line-height: 3.5vw;
+  }
+}
+
+/* Large devices (large desktops, 1054px and up) */
+@media (min-width: 1025px) { 
+  .activity-container {
+    left: 53%;
+    top: 51%;
+    transform: translateX(-50%);
+    width: 30%;
+  }
+
+  p {
+    line-height: 2.1vw;
+    font-size: 1rem;
+  }
+}
+
+/* Extra large devices (extra large desktops, 1300px and up) */
+@media (min-width: 1300px) {
+  .activity-container {
+    left: 53%;
+    top: 51%;
+    transform: translateX(-50%);
+    width: 30%;
+  }
+
+  p {
+    line-height: 2.1vw;
+    font-size: 1rem;
+  }
+}

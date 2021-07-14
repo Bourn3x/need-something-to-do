@@ -1,9 +1,9 @@
 import "./Button.scss"
 
-const Button = () => {
+const Button = ({ handleClick }) => {
   return (
     <div className={'button-container'}>
-      <button >
+      <button onClick={handleClick}>
         Generate!
       </button>
     </div>
