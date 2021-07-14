@@ -1,0 +1,45 @@
+@use "../../abstracts" as *;
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  display: relative;
+}
+
+button {
+  position: absolute;
+  margin-top: 6rem;
+  z-index: 1;
+
+  font-family: 'Righteous';
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+
+  padding: 0.2em 0.5em;
+
+  color: $pink;
+  background-color: transparent;
+
+  border-color: $pink;
+  border-style: solid;
+  border-radius: 0.5em;
+  border-width: 2px;
+
+  transition: all 0.5s;
+
+  &:hover {
+    color: white;
+    background-color: $pink;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 575px) {
+    margin-top: 8rem;
+    font-size: 2.4rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 8rem;
+    font-size: 2.4rem;
+  }
+}
