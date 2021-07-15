@@ -12,8 +12,6 @@ const HomePage = () => {
     fetch("http://www.boredapi.com/api/activity/")
     .then(res => res.json())
     .then(json => setActivity(json))
-    .then(console.log(activity))
-    .then(console.log(activity))
   }
 
   return(
