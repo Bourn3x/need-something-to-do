@@ -6,16 +6,20 @@
   transform: translateX(-50%);
   z-index: 1;
 
-  @media screen and (max-width: 575px) {
+  @media screen and (max-width: 429px) {
     top: 115vw;
   }
 
+  @media screen and (min-width: 430px) {
+    top: 105vw;
+  }
+
   @media screen and (min-width: 576px) {
-    margin-top: 8rem;
+    top: 30vw;
   }
 
   @media screen and (min-width: 1025px) {
-    margin-top: 5rem;
+    top: 18vw;
   }
 }
 
