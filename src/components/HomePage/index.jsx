@@ -10,7 +10,13 @@ const HomePage = () => {
   const [activity, setActivity] = useState(null);
 
   const fetchActivity = () => {
-    fetch("http://www.boredapi.com/api/activity/")
+    fetch("https://random-activity-generator.p.rapidapi.com/v1/random-activity", {
+      method: "GET",
+      headers: {
+        'X-RapidAPI-Key': 'd118290d3dmsh0bbdf1cddf47bdap1120d9jsn4a62165024d7',
+        'X-RapidAPI-Host': 'random-activity-generator.p.rapidapi.com'
+      }
+    })
     .then(res => res.json())
     .then(json => setActivity(new Activity(json)))
   }
